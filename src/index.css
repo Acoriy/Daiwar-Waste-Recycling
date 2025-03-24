@@ -1,0 +1,167 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Open+Sans:wght@300;400;500;600;700&family=IBM+Plex+Sans+Arabic:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 240 10% 3.9%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 240 10% 3.9%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 240 10% 3.9%;
+
+    --primary: 142 72% 29%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 267 45% 54%;
+    --secondary-foreground: 0 0% 100%;
+
+    --muted: 240 4.8% 95.9%;
+    --muted-foreground: 240 3.8% 46.1%;
+
+    --accent: 240 4.8% 95.9%;
+    --accent-foreground: 240 5.9% 10%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 240 5.9% 90%;
+    --input: 240 5.9% 90%;
+    --ring: 240 5.9% 10%;
+
+    --radius: 0.75rem;
+  }
+
+  * {
+    @apply border-border;
+    scroll-behavior: smooth;
+  }
+
+  html[dir="rtl"] {
+    font-family: 'IBM Plex Sans Arabic', sans-serif;
+  }
+
+  html[dir="ltr"] {
+    font-family: 'Open Sans', sans-serif;
+  }
+
+  body {
+    @apply bg-background text-foreground antialiased;
+  }
+
+  html[dir="rtl"] h1, 
+  html[dir="rtl"] h2, 
+  html[dir="rtl"] h3, 
+  html[dir="rtl"] h4, 
+  html[dir="rtl"] h5, 
+  html[dir="rtl"] h6 {
+    font-family: 'IBM Plex Sans Arabic', sans-serif;
+    @apply font-semibold tracking-tight;
+  }
+
+  html[dir="ltr"] h1, 
+  html[dir="ltr"] h2, 
+  html[dir="ltr"] h3, 
+  html[dir="ltr"] h4, 
+  html[dir="ltr"] h5, 
+  html[dir="ltr"] h6 {
+    font-family: 'Poppins', sans-serif;
+    @apply font-semibold tracking-tight;
+  }
+
+  .container {
+    @apply px-4 md:px-8 lg:px-12;
+  }
+
+  /* RTL specific styles */
+  [dir="rtl"] .ml-auto {
+    margin-left: 0;
+    margin-right: auto;
+  }
+
+  [dir="rtl"] .mr-auto {
+    margin-right: 0;
+    margin-left: auto;
+  }
+
+  [dir="rtl"] .ml-2 {
+    margin-left: 0;
+    margin-right: 0.5rem;
+  }
+
+  [dir="rtl"] .mr-2 {
+    margin-right: 0;
+    margin-left: 0.5rem;
+  }
+
+  /* Glass morphism styles */
+  .glass {
+    @apply bg-white/70 backdrop-blur-lg border border-white/20 shadow-subtle;
+  }
+
+  .glass-card {
+    @apply bg-white/90 backdrop-blur-md shadow-card border border-white/30 transition-all duration-300 hover:shadow-card-hover;
+  }
+
+  /* Reveal animations for scroll */
+  .reveal {
+    @apply opacity-0;
+  }
+
+  .reveal.active {
+    @apply animate-fade-in;
+  }
+
+  .reveal-right {
+    @apply opacity-0;
+  }
+
+  .reveal-right.active {
+    @apply animate-fade-in-right;
+  }
+
+  .reveal-left {
+    @apply opacity-0;
+  }
+
+  .reveal-left.active {
+    @apply animate-fade-in-left;
+  }
+
+  .reveal-up {
+    @apply opacity-0;
+  }
+
+  .reveal-up.active {
+    @apply animate-fade-in-up;
+  }
+
+  /* Button styles */
+  .btn {
+    @apply inline-flex items-center justify-center gap-2 rounded-md px-5 py-2.5 text-sm font-medium transition-all duration-300;
+  }
+
+  .btn-primary {
+    @apply bg-primary text-white hover:bg-primary-600 focus:ring-2 focus:ring-primary-200 focus:ring-offset-2;
+  }
+
+  .btn-secondary {
+    @apply bg-secondary text-white hover:bg-secondary-600 focus:ring-2 focus:ring-secondary-200 focus:ring-offset-2;
+  }
+
+  .btn-ghost {
+    @apply bg-transparent border border-gray-200 hover:bg-gray-50 text-gray-700;
+  }
+
+  /* Form elements */
+  .form-input {
+    @apply w-full rounded-md border border-gray-200 bg-white px-4 py-2.5 text-gray-900 transition-all duration-300 
+    focus:border-primary focus:outline-none focus:ring-1 focus:ring-primary;
+  }
+}
