@@ -43,11 +43,11 @@ const Header: React.FC = () => {
         <nav className="hidden md:block">
           <ul className={`flex items-center space-x-8 ${isRTL ? 'space-x-reverse' : ''}`}>
             <li>
-              <a href="#about" className="text-gray-900 hover:text-primary transition-colors">
+              <a href="#about" className="text-gray-900 hover:text-primary transition-colors ">
                 {t('About', 'حول')}
               </a>
             </li>
-            <li>
+            <li className='pl-5'>
               <a href="#values" className="text-gray-900 hover:text-primary transition-colors">
                 {t('Values', 'القيم')}
               </a>

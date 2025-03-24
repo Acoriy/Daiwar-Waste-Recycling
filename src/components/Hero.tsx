@@ -13,13 +13,13 @@ const Hero: React.FC = () => {
   // ];
 
   // Icônes de technologie
-  const techIcons = [
-    { icon: <Leaf size={24} className="text-green-500" />, name: t("Sustainability", "استدامة") },
-    { icon: <Zap size={24} className="text-yellow-500" />, name: t("Efficiency", "كفاءة") },
-    { icon: <Cpu size={24} className="text-blue-500" />, name: t("AI Technology", "ذكاء اصطناعي") },
-    { icon: <BarChart2 size={24} className="text-purple-500" />, name: t("Analytics", "تحليلات") },
-    { icon: <Globe size={24} className="text-primary" />, name: t("Global", "عالمي") }
-  ];
+  // const techIcons = [
+  //   { icon: <Leaf size={24} className="text-green-500" />, name: t("Sustainability", "استدامة") },
+  //   { icon: <Zap size={24} className="text-yellow-500" />, name: t("Efficiency", "كفاءة") },
+  //   { icon: <Cpu size={24} className="text-blue-500" />, name: t("AI Technology", "ذكاء اصطناعي") },
+  //   { icon: <BarChart2 size={24} className="text-purple-500" />, name: t("Analytics", "تحليلات") },
+  //   { icon: <Globe size={24} className="text-primary" />, name: t("Global", "عالمي") }
+  // ];
 
   return (
     <section
@@ -82,20 +82,10 @@ const Hero: React.FC = () => {
               </a>
             </div>
             
-            {/* Statistiques */}
-            {/* <div className={`mt-12 flex ${isRTL ? 'justify-end' : 'justify-start'} gap-6`}>
-              {stats.map((stat, index) => (
-                <div key={index} className="text-center">
-                  <div className="text-3xl font-bold text-primary mb-1 animate-countup" data-target={stat.value}>
-                    0
-                  </div>
-                  <div className="text-sm text-gray-600">{stat.label}</div>
-                </div>
-              ))}
-            </div> */}
+          
             
             {/* Icônes de technologie */}
-            <div className={`mt-8 flex flex-wrap ${isRTL ? 'justify-end' : 'justify-start'} gap-3`}>
+            {/* <div className={`mt-8 flex flex-wrap ${isRTL ? 'justify-end' : 'justify-start'} gap-3`}>
               {techIcons.map((tech, index) => (
                 <div 
                   key={index} 
@@ -105,7 +95,7 @@ const Hero: React.FC = () => {
                   <span className={`text-sm font-medium ${isRTL ? 'mr-2' : 'ml-2'}`}>{tech.name}</span>
                 </div>
               ))}
-            </div>
+            </div> */}
           </div>
 
           {/* Image avec effets */}

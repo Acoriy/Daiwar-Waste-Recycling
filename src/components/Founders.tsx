@@ -70,8 +70,8 @@ const Founders: React.FC = () => {
               </div>
               <div className={`p-6 ${isRTL ? 'text-right' : 'text-left'}`}>
                 <h3 className="text-xl font-semibold text-gray-900">{founder.name}</h3>
-                <p className="text-secondary font-medium mb-2">{founder.position}</p>
-                <p className="text-gray-600 text-sm mb-4">{founder.expertise}</p>
+                {/* <p className="text-secondary font-medium mb-2">{founder.position}</p> */}
+                {/* <p className="text-gray-600 text-sm mb-4">{founder.expertise}</p> */}
                 <div className={`flex space-x-3 ${isRTL ? 'space-x-reverse justify-end' : ''}`}>
                   <a 
                     href={`mailto:${founder.email}`} 

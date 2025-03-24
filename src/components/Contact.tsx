@@ -80,7 +80,7 @@ const Contact: React.FC = () => {
                   </div>
                 </div>
                 
-                <div className="p-6 rounded-xl bg-white shadow-subtle">
+                {/* <div className="p-6 rounded-xl bg-white shadow-subtle">
                   <h3 className="text-lg font-medium text-gray-900 mb-2">{t("Offices", "المكاتب")}</h3>
                   <p className="text-gray-700">
                     {t(
@@ -88,7 +88,7 @@ const Contact: React.FC = () => {
                       "لمم يتم تحدديده"
                     )}
                   </p>
-                </div>
+                </div> */}
               </div>
             </div>
             

@@ -33,16 +33,16 @@ const Values: React.FC = () => {
     {
       title: t("Our Goals", "أهدافنا"),
       items: [
-        t("1- Enhance Sustainability - Develop innovative solutions that help businesses and municipalities achieve zero waste and reduce carbon footprints.",
-          "١- تعزيز الاستدامة - تطوير حلول مبتكرة تُساعد الشركات والبلديات على تحقيق صفر نفايات وتقليل البصمة الكربونية."),
-        t("2- Optimize Waste Management - Utilize AI and IoT to improve waste collection, sorting, and recycling efficiency.",
-          "٢- تحسين إدارة النفايات - استخدام الذكاء الاصطناعي وإنترنت الأشياء لتحسين كفاءة جمع النفايات وفرزها وإعادة تدويرها."),
-        t("3- Promote Environmental Awareness - Encourage individuals and organizations to adopt greener waste disposal and recycling practices.",
-          "٣- تعزيز الوعي البيئي - تشجيع الأفراد والمؤسسات على تبني ممارسات أكثر مراعاةً للبيئة للتخلص من النفايات وإعادة تدويرها."),
-        t("4- Expand Global Reach - Grow our impact by partnering with governments, businesses, and communities worldwide.",
-          "٤- توسيع نطاقنا العالمي - تعزيز تأثيرنا من خلال الشراكة مع الحكومات والشركات والمجتمعات حول العالم."),
-        t("5- Drive Technological Innovation - Continuously improve our solutions with cutting-edge data analytics, automation, and AI-driven insights.",
-          "٥- دفع عجلة الابتكار التكنولوجي - تحسين حلولنا باستمرار باستخدام أحدث تحليلات البيانات والأتمتة والرؤى المستندة إلى الذكاء الاصطناعي.")
+        t(" - Enhance Sustainability - Develop innovative solutions that help businesses and municipalities achieve zero waste and reduce carbon footprints.",
+          "   تعزيز الاستدامة - تطوير حلول مبتكرة تُساعد الشركات والبلديات على تحقيق صفر نفايات وتقليل البصمة الكربونية."),
+        t(" Optimize Waste Management - Utilize AI and IoT to improve waste collection, sorting, and recycling efficiency.",
+          "   تحسين إدارة النفايات - استخدام الذكاء الاصطناعي وإنترنت الأشياء لتحسين كفاءة جمع النفايات وفرزها وإعادة تدويرها."),
+        t(" - Promote Environmental Awareness - Encourage individuals and organizations to adopt greener waste disposal and recycling practices.",
+          "  تعزيز الوعي البيئي - تشجيع الأفراد والمؤسسات على تبني ممارسات أكثر مراعاةً للبيئة للتخلص من النفايات وإعادة تدويرها."),
+        t("-  Expand Global Reach - Grow our impact by partnering with governments, businesses, and communities worldwide.",
+          "- توسيع نطاقنا العالمي - تعزيز تأثيرنا من خلال الشراكة مع الحكومات والشركات والمجتمعات حول العالم."),
+        t("-  Drive Technological Innovation - Continuously improve our solutions with cutting-edge data analytics, automation, and AI-driven insights.",
+          "  دفع عجلة الابتكار التكنولوجي - تحسين حلولنا باستمرار باستخدام أحدث تحليلات البيانات والأتمتة والرؤى المستندة إلى الذكاء الاصطناعي.")
       ],
       icon: <Leaf size={40} className="text-secondary" />
     }
