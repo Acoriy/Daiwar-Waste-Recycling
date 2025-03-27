@@ -13,7 +13,7 @@ const Founders: React.FC = () => {
     {
       name: t("Dr. Zaki AL Gasemi", "د. زكي القاسمي"),
       position: t("CEO & Co-founder", "الرئيس التنفيذي والمؤسس المشارك"),
-      expertise: t("20 years of expertise in sustainable innovation", " مثال:  20عامًا من الخبرة في الابتكار المستدام "),
+      expertise: t("20 years of expertise in sustainable innovation", "   20عامًا من الخبرة في الابتكار المستدام "),
       image: Zaki_Alqasemi,
       email: "zaki@daiwer.com.sa",
       linkedin: "#"
@@ -21,7 +21,7 @@ const Founders: React.FC = () => {
     {
       name: t("Eng. Rashid Almarri", "م.راشد المري"),
       position: t("CTO", "مدير التكنولوجيا"),
-      expertise: t("AI and machine learning specialist", "متخصصة في الذكاء الاصطناعي والتعلم الآلي  :مثال"),
+      expertise: t("AI and machine learning specialist", "متخصصة في الذكاء الاصطناعي والتعلم الآلي  "),
       image: Rachid_Almarri,
       email: "rashid@daiwer.com.sa",
       linkedin: "#"
@@ -29,7 +29,7 @@ const Founders: React.FC = () => {
     {
       name: t("Eng. Nawaf Albalwi", "م.نواف البلوي"),
       position: t("CFO", "المدير المالي"),
-      expertise: t("Exemple : Expert in green project financing", "مثال :خبير في تمويل المشاريع الخضراء  " ),
+      expertise: t("Exemple : Expert in green project financing", " خبير في تمويل المشاريع الخضراء  " ),
       image: Nawfal_Albalwi,
       email: "nawaf@daiwer.com.sa",
       linkedin: "#"
