@@ -140,7 +140,7 @@ const Footer: React.FC = () => {
         
         <div className={`pt-8 mt-8 border-t border-gray-100 flex flex-col md:flex-row ${isRTL ? 'md:flex-row-reverse' : ''} justify-between items-center`}>
           <p className="text-gray-500 text-sm">
-            &copy; {currentYear} Daiwer. {t('All rights reserved.', 'جميع الحقوق محفوظة.')}
+            &copy; {currentYear} Daiwer. {t('All rights reserved | Programmed by Sofyane Acoriy.', '  جميع الحقوق محفوظة. | برمج من طرف سفيان اكوري ')}
           </p>
           <div className={`flex space-x-6 ${isRTL ? 'space-x-reverse' : ''} mt-4 md:mt-0`}>
             <a href="#" className="text-gray-500 hover:text-primary text-sm">

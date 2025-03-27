@@ -13,7 +13,7 @@ const Founders: React.FC = () => {
     {
       name: t("Dr. Zaki AL Gasemi", "د. زكي القاسمي"),
       position: t("CEO & Co-founder", "الرئيس التنفيذي والمؤسس المشارك"),
-      expertise: t("Exemple :20 years of expertise in sustainable innovation", " مثال:  20عامًا من الخبرة في الابتكار المستدام "),
+      expertise: t("20 years of expertise in sustainable innovation", " مثال:  20عامًا من الخبرة في الابتكار المستدام "),
       image: Zaki_Alqasemi,
       email: "zaki@daiwer.com.sa",
       linkedin: "#"
@@ -21,7 +21,7 @@ const Founders: React.FC = () => {
     {
       name: t("Eng. Rashid Almarri", "م.راشد المري"),
       position: t("CTO", "مدير التكنولوجيا"),
-      expertise: t("Exemple : AI and machine learning specialist", "متخصصة في الذكاء الاصطناعي والتعلم الآلي  :مثال"),
+      expertise: t("AI and machine learning specialist", "متخصصة في الذكاء الاصطناعي والتعلم الآلي  :مثال"),
       image: Rachid_Almarri,
       email: "rashid@daiwer.com.sa",
       linkedin: "#"
@@ -70,8 +70,10 @@ const Founders: React.FC = () => {
               </div>
               <div className={`p-6 ${isRTL ? 'text-right' : 'text-left'}`}>
                 <h3 className="text-xl font-semibold text-gray-900">{founder.name}</h3>
-                {/* <p className="text-secondary font-medium mb-2">{founder.position}</p> */}
-                {/* <p className="text-gray-600 text-sm mb-4">{founder.expertise}</p> */}
+                <p className="text-secondary font-medium mb-2">{founder.position}</p> 
+                
+                <p className="text-gray-600 text-sm mb-4">{founder.expertise}</p> 
+                
                 <div className={`flex space-x-3 ${isRTL ? 'space-x-reverse justify-end' : ''}`}>
                   <a 
                     href={`mailto:${founder.email}`} 

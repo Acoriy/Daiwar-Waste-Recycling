@@ -6,20 +6,20 @@ const Hero: React.FC = () => {
   const { t, isRTL } = useLanguage();
 
   // Données pour les statistiques
-  // const stats = [
-  //   { value: "40%", label: t("Waste Reduction", "تقليل النفايات") },
-  //   { value: "100+", label: t("Happy Clients", "عميل راضٍ") },
-  //   { value: "24/7", label: t("Support", "دعم فني") }
-  // ];
+  const stats = [
+    { value: "40%", label: t("Waste Reduction", "تقليل النفايات") },
+    { value: "100+", label: t("Happy Clients", "عميل راضٍ") },
+    { value: "24/7", label: t("Support", "دعم فني") }
+  ];
 
   // Icônes de technologie
-  // const techIcons = [
-  //   { icon: <Leaf size={24} className="text-green-500" />, name: t("Sustainability", "استدامة") },
-  //   { icon: <Zap size={24} className="text-yellow-500" />, name: t("Efficiency", "كفاءة") },
-  //   { icon: <Cpu size={24} className="text-blue-500" />, name: t("AI Technology", "ذكاء اصطناعي") },
-  //   { icon: <BarChart2 size={24} className="text-purple-500" />, name: t("Analytics", "تحليلات") },
-  //   { icon: <Globe size={24} className="text-primary" />, name: t("Global", "عالمي") }
-  // ];
+  const techIcons = [
+    { icon: <Leaf size={24} className="text-green-500" />, name: t("Sustainability", "استدامة") },
+    { icon: <Zap size={24} className="text-yellow-500" />, name: t("Efficiency", "كفاءة") },
+    { icon: <Cpu size={24} className="text-blue-500" />, name: t("AI Technology", "ذكاء اصطناعي") },
+    { icon: <BarChart2 size={24} className="text-purple-500" />, name: t("Analytics", "تحليلات") },
+    { icon: <Globe size={24} className="text-primary" />, name: t("Global", "عالمي") }
+  ];
 
   return (
     <section
@@ -85,7 +85,7 @@ const Hero: React.FC = () => {
           
             
             {/* Icônes de technologie */}
-            {/* <div className={`mt-8 flex flex-wrap ${isRTL ? 'justify-end' : 'justify-start'} gap-3`}>
+            <div className={`mt-8 flex flex-wrap ${isRTL ? 'justify-end' : 'justify-start'} gap-3`}>
               {techIcons.map((tech, index) => (
                 <div 
                   key={index} 
@@ -95,7 +95,7 @@ const Hero: React.FC = () => {
                   <span className={`text-sm font-medium ${isRTL ? 'mr-2' : 'ml-2'}`}>{tech.name}</span>
                 </div>
               ))}
-            </div> */}
+            </div> 
           </div>
 
           {/* Image avec effets */}
