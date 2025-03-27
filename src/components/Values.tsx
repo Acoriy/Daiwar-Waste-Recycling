@@ -88,7 +88,7 @@ const Values: React.FC = () => {
               key={index} 
               className={`p-8 rounded-3xl ${item.bgColor} border-2 ${item.borderColor} shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2`}
             >
-              <div className="flex items-center mb-6">
+              <div className="flex items-center mb-6 gap-3">
                 <div className="p-3 rounded-xl bg-white shadow-md mr-4">
                   {item.icon}
                 </div>
